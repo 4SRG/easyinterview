@@ -22,7 +22,7 @@ const Cart = () => {
     const boxesComponent = cartz?.map(a => {
         return (
             <div className='box text-black flex justify-center items-center max-w-[400px] text-[0.7rem] sm:text-[1rem]'>
-                <img  className="max-w-[120px] aspect-square pl-5"src={a.image}></img>
+                <img  className="max-w-[120px] aspect-square pl-5"src={a.image} alt="loading"></img>
                 <h2 className='text-center pl-5 pr-5  font-light max-w-[80%] mx-auto'>{a.title}</h2>
                 <button onClick={() => handleRemove(a.id)} className='text-yellow-200'>
                     Remove Item

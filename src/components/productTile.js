@@ -15,7 +15,7 @@ const ProductTile = (props) => {
   }
   return (
     <div className='box'>
-      <img src={props.image}></img>
+      <img src={props.image} alt="loading..."></img>
       <h2 className='text-center mt-5 font-light max-w-[80%] mx-auto'>{props.title}</h2>
       <button onClick={cartz.some(item => item.id === props.id) ? handleRemove : handleAddToCart} className='text-yellow-200'>
         {
