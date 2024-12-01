@@ -1,0 +1,43 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body,html{
+    margin: 0;
+    padding: 0;
+    color: rgb(233, 233, 90);
+}
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 85px;
+    background: rgb(209, 209, 209);
+}
+.box img{
+    width: 50%;
+    aspect-ratio: 2/2.3;
+    margin: 20px auto;
+    mix-blend-mode: multiply;
+}
+
+.box button{
+    padding: 6px 15px;
+    background-color: black;
+    position: absolute;
+    border-radius: 20px;
+    width: max-content;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all .4s;
+}
+.box button:hover{
+    background-color: rgb(233, 233, 90);
+    color: black;
+
+}
